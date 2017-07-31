@@ -64,3 +64,5 @@ Button.propTypes = {
 export default Button;
 ```
   * Avoid UI Markup in Statefull Components
+  * Avoid logic in Stateless Components
+
