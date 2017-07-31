@@ -1,0 +1,20 @@
+<!-- This is a template for index.html  -->
+<html>
+  <head>
+    <% if (htmlWebpackPlugin.options.heapToken) {%>
+      <!-- Embed Heap in Production -->
+      <script type="text/javascript">
+    window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+      heap.load("2663632632");
+      </script>
+      <!-- End Heap -->
+    <% } %>
+    <title>Hello React Startup Kit</title>
+  </head>
+
+  <body class="w-100 sans-serif bg-white pa5">
+    <h1>React Startup Kit</h1>
+    <!-- Main Entry -->
+    <div id="app"></div>
+  </body>
+</html>
