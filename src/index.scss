@@ -1,5 +1,16 @@
 @import './tachyons.scss';
 
+* {
+  outline: none; 
+}
+
 body {
   background: "#ccc";
+}
+
+input {
+  background-color: #0D0242;
+  padding: 2px 8px;
+  border: 0;
+  color: yellow; 
 }
